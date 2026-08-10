@@ -396,7 +396,10 @@ Show users being added to their respective teams:
 ```bash
 ./UserManager.sh addUser Rakesh amigo
 ./UserManager.sh addUser Sandeep unixkings
+
 ```
+![Uploading Screenshot 2026-08-09 125425.png…]()
+
 
 ```text
 <img width="1013" height="796" alt="Screenshot 2026-08-09 125425" src="https://github.com/user-attachments/assets/30b2d061-61c7-437c-8b6b-09ce58ec7c05" />
