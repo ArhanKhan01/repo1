@@ -1,6 +1,4 @@
 # ⭐ Assignment 1.2
-<img width="1314" height="615" alt="Screenshot 2026-05-03 121722" src="https://github.com/user-attachments/assets/820f07ca-7348-4286-9b91-b428239f7f3b" />
-
 
 ## 📌 Overview
 This assignment focuses on creating a utility script using basic Linux commands to manage directories and files.
