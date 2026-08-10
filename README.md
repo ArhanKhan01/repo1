@@ -114,3 +114,6 @@ animate-gaussianAssignment-1.2/
 
 
 🎉 Assignment Completed
+
+<img width="1013" height="796" alt="Screenshot 2026-08-09 125425" src="https://github.com/user-attachments/assets/dc2089b1-4e30-45c1-bc83-8ee65671067d" />
+
