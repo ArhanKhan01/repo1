@@ -1,3 +1,1 @@
-# repo1
-<img width="1366" height="768" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/bef1a8a6-6036-4fda-8269-b773ea8051f8" />
-
+<img width="503" height="151" alt="Screenshot 2026-08-03 082539" src="https://github.com/user-attachments/assets/1f6ee46a-fc19-46c6-b782-e19c77ba84e4" />
