@@ -1,101 +1,76 @@
-# 👤 UserManager Utility
+👤 UserManager Utility
+📌 Project Title
 
-## 📌 Project Title
+iUserManager Utility — Assignment 2
 
-**iUserManager Utility — Assignment 2**
+📝 Project Description
 
----
-
-## 📝 Project Description
-
-The **iUserManager** utility is a Bash Shell Script designed to simulate basic **user and team management** in Linux.
+The iUserManager utility is a Bash Shell Script designed to simulate basic user and team management in Linux.
 
 The utility allows us to create teams, add users under teams, manage user permissions, create shared directories, change user passwords and shells, and delete or list users and teams.
 
-The project focuses on Linux **users, groups, permissions, directories, and shell scripting**.
+The project focuses on Linux users, groups, permissions, directories, and shell scripting.
 
----
-
-## 🎯 Objective
+🎯 Objective
 
 The main objectives of this project are:
 
-* 👥 Create and manage simulated teams.
-* 👤 Create and manage users under a team.
-* 🔐 Configure appropriate permissions for user home directories.
-* 📁 Create shared `team` and `ninja` directories for every user.
-* 🤝 Provide full access to members of the same team.
-* 🥷 Provide full access to all ninjas through the `ninja` directory.
-* 🔑 Change user passwords.
-* 🐚 Change user shells.
-* 🗑️ Delete users and teams.
-* 📋 List users and teams.
-* 🐚 Practice Linux user and permission management using Bash.
-
----
-
-## ✨ Features
-
-### 👥 Team Management
-
-* ➕ Add a team.
-* 🗑️ Delete a team.
-* 📋 List all teams.
-
-### 👤 User Management
-
-* ➕ Add a user under a team.
-* 🗑️ Delete a user.
-* 📋 List users.
-
-### 🔐 Permission Management
+👥 Create and manage simulated teams.
+👤 Create and manage users under a team.
+🔐 Configure appropriate permissions for user home directories.
+📁 Create shared team and ninja directories for every user.
+🤝 Provide full access to members of the same team.
+🥷 Provide full access to all ninjas through the ninja directory.
+🔑 Change user passwords.
+🐚 Change user shells.
+🗑️ Delete users and teams.
+📋 List users and teams.
+🐚 Practice Linux user and permission management using Bash.
+✨ Features
+👥 Team Management
+➕ Add a team.
+🗑️ Delete a team.
+📋 List all teams.
+👤 User Management
+➕ Add a user under a team.
+🗑️ Delete a user.
+📋 List users.
+🔐 Permission Management
 
 Each user's home directory should have:
 
-* 👤 User: **Read + Write + Execute**
-* 👥 Same-team users: **Read + Execute**
-* 🌍 Others: **Execute only**
-
-### 📁 Shared Directories
+👤 User: Read + Write + Execute
+👥 Same-team users: Read + Execute
+🌍 Others: Execute only
+📁 Shared Directories
 
 Every user's home directory contains:
 
-```text
 /home/<username>
 ├── team
 └── ninja
-```
+🤝 team Directory
 
-#### 🤝 `team` Directory
+Members of the same team have full access to this directory.
 
-Members of the **same team** have full access to this directory.
-
-#### 🥷 `ninja` Directory
+🥷 ninja Directory
 
 All ninjas have full access to this directory.
 
-### ⚙️ Additional Features
-
-* 🔑 Change user password.
-* 🐚 Change user shell.
-* 🗑️ Delete user.
-* 👥 Delete team.
-* 📋 List users.
-* 📋 List teams.
-
----
-
-## 🛠️ Tech Stack
-
-* 🐧 **Linux**
-* 🐚 **Bash Shell Scripting**
-* 👤 **Linux User Management**
-* 👥 **Linux Group Management**
-* 🔐 **Linux File Permissions**
-
-### Linux Commands / Concepts
-
-```text
+⚙️ Additional Features
+🔑 Change user password.
+🐚 Change user shell.
+🗑️ Delete user.
+👥 Delete team.
+📋 List users.
+📋 List teams.
+🛠️ Tech Stack
+🐧 Linux
+🐚 Bash Shell Scripting
+👤 Linux User Management
+👥 Linux Group Management
+🔐 Linux File Permissions
+Linux Commands / Concepts
 useradd
 userdel
 groupadd
@@ -106,100 +81,57 @@ chmod
 chown
 mkdir
 ls
-```
-
----
-
-## ⚙️ Installation Steps
-
-### 1️⃣ Open the Linux Terminal
+⚙️ Installation Steps
+1️⃣ Open the Linux Terminal
 
 Open your Linux terminal.
 
-### 2️⃣ Go to the Project Directory
-
-```bash
+2️⃣ Go to the Project Directory
 cd <project-folder>
-```
-
-### 3️⃣ Check the Script
-
-```bash
+3️⃣ Check the Script
 ls
-```
 
 The project should contain:
 
-```text
 UserManager.sh
 README.md
-```
-
-### 4️⃣ Give Execute Permission
-
-```bash
+4️⃣ Give Execute Permission
 chmod +x UserManager.sh
-```
-
-### 5️⃣ Verify Permission
-
-```bash
+5️⃣ Verify Permission
 ls -l UserManager.sh
-```
 
 The script should have execute permission.
 
----
-
-## ▶️ How to Run the Project
+▶️ How to Run the Project
 
 The general syntax is:
 
-```bash
 ./UserManager.sh <operation> <arguments>
-```
 
-> ⚠️ User and group management operations may require `sudo` or root privileges depending on the implementation.
+⚠️ User and group management operations may require sudo or root privileges depending on the implementation.
 
----
+👥 1. Add a Team
 
-### 👥 1. Add a Team
+Create a team named amigo:
 
-Create a team named `amigo`:
-
-```bash
 ./UserManager.sh addTeam amigo
-```
 
 Create another team:
 
-```bash
 ./UserManager.sh addTeam unixkings
-```
+👤 2. Add a User Under a Team
 
----
+Add Rakesh to amigo:
 
-### 👤 2. Add a User Under a Team
-
-Add `Rakesh` to `amigo`:
-
-```bash
 ./UserManager.sh addUser Rakesh amigo
-```
 
-Add `Sandeep` to `unixkings`:
+Add Sandeep to unixkings:
 
-```bash
 ./UserManager.sh addUser Sandeep unixkings
-```
-
----
-
-### 📂 Expected Directory Structure
+📂 Expected Directory Structure
 
 After creating the users, the structure should be similar to:
 
-```text
 /home
 │
 ├── Rakesh
@@ -209,146 +141,88 @@ After creating the users, the structure should be similar to:
 └── Sandeep
     ├── team
     └── ninja
-```
-
----
-
-### 🔐 3. Home Directory Permissions
+🔐 3. Home Directory Permissions
 
 The home directory of every user should follow these access rules:
 
-| User Type    | Permission             |
-| ------------ | ---------------------- |
-| 👤 Owner     | Read + Write + Execute |
-| 👥 Same Team | Read + Execute         |
-| 🌍 Others    | Execute                |
+User Type	Permission
+👤 Owner	Read + Write + Execute
+👥 Same Team	Read + Execute
+🌍 Others	Execute
 
 The required permission model is:
 
-```text
 Owner  → rwx
 Team   → r-x
 Others → --x
-```
+🤝 4. Team Shared Directory
 
----
-
-### 🤝 4. Team Shared Directory
-
-The `team` directory inside each user's home directory is shared with members of the same team.
+The team directory inside each user's home directory is shared with members of the same team.
 
 Example:
 
-```text
 /home/Rakesh/team
-```
 
-All members of Rakesh's team should have **full access** to this directory.
+All members of Rakesh's team should have full access to this directory.
 
----
+🥷 5. Ninja Shared Directory
 
-### 🥷 5. Ninja Shared Directory
-
-The `ninja` directory is shared among all ninjas.
+The ninja directory is shared among all ninjas.
 
 Example:
 
-```text
 /home/Rakesh/ninja
-```
 
-All ninjas should have **full access** to the directory.
+All ninjas should have full access to the directory.
 
----
-
-### 🔑 6. Change User Password
+🔑 6. Change User Password
 
 Change Rakesh's password:
 
-```bash
 ./UserManager.sh changePasswd Rakesh
-```
 
 The utility should prompt for the new password.
 
----
-
-### 🐚 7. Change User Shell
+🐚 7. Change User Shell
 
 Change Rakesh's shell to Bash:
 
-```bash
 ./UserManager.sh changeShell Rakesh /bin/bash
-```
-
----
-
-### 🗑️ 8. Delete a User
+🗑️ 8. Delete a User
 
 Delete Rakesh:
 
-```bash
 ./UserManager.sh delUser Rakesh
-```
+👥 9. Delete a Team
 
----
+Delete the amigo team:
 
-### 👥 9. Delete a Team
-
-Delete the `amigo` team:
-
-```bash
 ./UserManager.sh delTeam amigo
-```
-
----
-
-### 📋 10. List Users
-
-```bash
+📋 10. List Users
 ./UserManager.sh ls User
-```
-
----
-
-### 📋 11. List Teams
-
-```bash
+📋 11. List Teams
 ./UserManager.sh ls Team
-```
+🔐 Environment Variables (.env)
 
----
-
-## 🔐 Environment Variables (.env)
-
-This project does **not require a `.env` file**.
+This project does not require a .env file.
 
 The utility works with Linux users, groups, directories, and permissions directly through the command line.
 
----
+🔗 API Endpoints
 
-## 🔗 API Endpoints
+This project is a Linux command-line utility and does not contain a backend or REST API.
 
-This project is a **Linux command-line utility** and does not contain a backend or REST API.
+API endpoints are not applicable.
 
-**API endpoints are not applicable.**
-
----
-
-## 📂 Folder Structure
+📂 Folder Structure
 
 The project structure should be similar to:
 
-```text
 UserManager/
 │
 ├── 📄 UserManager.sh
 └── 📖 README.md
-```
-
-### Resultant User Structure
-
-```text
+Resultant User Structure
 /home
 │
 ├── Rakesh
@@ -358,177 +232,94 @@ UserManager/
 └── Sandeep
     ├── team
     └── ninja
-```
+🖼️ Output / Screenshots
+📸 Screenshot 1 — Project Files
 
----
+Show the project directory containing UserManager.sh.
 
-## 🖼️ Output / Screenshots
-
-### 📸 Screenshot 1 — Project Files
-
-Show the project directory containing `UserManager.sh`.
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 2 — Add Teams
+📸 Screenshot 2 — Add Teams
 
 Show the commands used to create teams:
 
-```bash
 ./UserManager.sh addTeam amigo
 ./UserManager.sh addTeam unixkings
-```
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 3 — Add Users
+📸 Screenshot 3 — Add Users
 
 Show users being added to their respective teams:
 
-```bash
 ./UserManager.sh addUser Rakesh amigo
 ./UserManager.sh addUser Sandeep unixkings
-```
-
-```text
 [📸 Add Screenshot Here]
-```
+📸 Screenshot 4 — User Directory Structure
 
----
+Show the /home structure containing the users and their team and ninja directories.
 
-### 📸 Screenshot 4 — User Directory Structure
-
-Show the `/home` structure containing the users and their `team` and `ninja` directories.
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 5 — Home Directory Permissions
+📸 Screenshot 5 — Home Directory Permissions
 
 Show the permissions of the user's home directory.
 
-```text
 [📸 Add Screenshot Here]
-```
+📸 Screenshot 6 — Team Shared Directory
 
----
+Show the team directory and its permissions/access.
 
-### 📸 Screenshot 6 — Team Shared Directory
-
-Show the `team` directory and its permissions/access.
-
-```text
 [📸 Add Screenshot Here]
-```
+📸 Screenshot 7 — Ninja Shared Directory
 
----
+Show the ninja directory and its permissions/access.
 
-### 📸 Screenshot 7 — Ninja Shared Directory
-
-Show the `ninja` directory and its permissions/access.
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 8 — Change Password
+📸 Screenshot 8 — Change Password
 
 Show the execution of:
 
-```bash
 ./UserManager.sh changePasswd Rakesh
-```
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 9 — Change Shell
+📸 Screenshot 9 — Change Shell
 
 Show the execution of:
 
-```bash
 ./UserManager.sh changeShell Rakesh /bin/bash
-```
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 10 — List Users and Teams
+📸 Screenshot 10 — List Users and Teams
 
 Show:
 
-```bash
 ./UserManager.sh ls User
 ./UserManager.sh ls Team
-```
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-### 📸 Screenshot 11 — Delete User / Team
+📸 Screenshot 11 — Delete User / Team
 
 Show the execution of:
 
-```bash
 ./UserManager.sh delUser Rakesh
 ./UserManager.sh delTeam amigo
-```
-
-```text
 [📸 Add Screenshot Here]
-```
-
----
-
-## 🎓 Learning Outcome
+🎓 Learning Outcome
 
 After completing this assignment, I learned:
 
-* 🐧 Linux user and group management.
-* 👤 How Linux users are created and managed.
-* 👥 How teams can be represented using Linux groups.
-* 🔐 How Linux file and directory permissions work.
-* 📁 How to create and manage user home directories.
-* 🤝 How shared directories can be configured for team members.
-* 🥷 How to create a shared area for all ninjas.
-* 🔑 How to change user passwords.
-* 🐚 How to change a user's login shell.
-* 🗑️ How to delete users and groups.
-* 📋 How to list users and teams.
-* 🐚 How Bash scripting can automate Linux administration tasks.
+🐧 Linux user and group management.
+👤 How Linux users are created and managed.
+👥 How teams can be represented using Linux groups.
+🔐 How Linux file and directory permissions work.
+📁 How to create and manage user home directories.
+🤝 How shared directories can be configured for team members.
+🥷 How to create a shared area for all ninjas.
+🔑 How to change user passwords.
+🐚 How to change a user's login shell.
+🗑️ How to delete users and groups.
+📋 How to list users and teams.
+🐚 How Bash scripting can automate Linux administration tasks.
+👨‍💻 Author Name
 
----
+[Your Name]
 
-## 👨‍💻 Author Name
+🎉 Conclusion
 
-**[Your Name]**
-
----
-
-## 🎉 Conclusion
-
-The **iUserManager Utility** provides a practical way to understand Linux user management, group management, file permissions, shared directories, and Bash scripting.
+The iUserManager Utility provides a practical way to understand Linux user management, group management, file permissions, shared directories, and Bash scripting.
 
 The assignment demonstrates how Linux administration tasks can be automated through a simple command-line utility. 🐧👤🔐
